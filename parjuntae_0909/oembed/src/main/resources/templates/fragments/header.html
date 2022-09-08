@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+  <header th:fragment="headerFragment">
+    <link rel="stylesheet" href="/css/header.css" />
+    <script type="text/javascript" src="/js/oembed.js" ></script>
+    <div class="header-container">
+        <div class="header-contents">
+            <div id="title">oEmbed Test</div>
+            <div id="input_Box">
+              <input type="text" placeholder="url을 입력해주세요." id="urlText"/>
+              <input type="button" value="확인" onclick="getOembed(urlText.value)"></input>
+            </div>
+        </div>
+    </div>
+  </header>
+</html>

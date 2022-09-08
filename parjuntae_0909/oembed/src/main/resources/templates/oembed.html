@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>oEmbed</title>
+      <link rel="stylesheet" href="/css/oembed.css" />
+    </head>
+    <body>
+      <div class="wrapper">
+        <div class="contentWrapper">
+          <!-- header -->
+          <header th:replace="fragments/header :: headerFragment"></header>
+          <!-- contents -->
+          <header th:replace="fragments/content :: contentFragment"></header>
+        </div>
+        <!-- footer -->
+        <footer th:replace="fragments/footer :: footerFragment"></footer>
+      </div>
+    </body>
+  </html>
+</html>
