@@ -2,16 +2,14 @@ const getOembed = (input) => {
   const url = "/oembed/api?search=" + input;
 
   fetch(url)
-    .then((resolvedData) => {
-      resolvedData
-        .json()
+    .then((res) => {
+      res.json()
         .then((json) => {
-          const render = document.getElementById("titleArea");
-          const render2 = document.getElementById("ulArea");
-          // 다른 url 입력했을 경우 초기화 해줘야 한다
-          render.innerHTML = "";
-          render2.innerHTML = "";
-          console.log("test");
+          const contentTitle = document.getElementById("content-title");
+          const contentList = document.getElementById("content-list");
+
+          contentTitle.innerHTML = "";
+          contentList.innerHTML = "";
 
           // 더 나은 방법은 json에 있는 데이터를 Map으로 저장하고
           // Map으로 받아서 해당 컬렉션 안에 있는 모든 데이터를 꺼내는게 더 효율적이라 생각한다
@@ -20,7 +18,7 @@ const getOembed = (input) => {
           if (json.title != null) {
             titleData =
               "<div><div>title</div><div>" + json.title + "</div></div>";
-            render2.innerHTML = titleData;
+              contentTitle.innerHTML = <div>title</div>
           }
 
           let data = "";

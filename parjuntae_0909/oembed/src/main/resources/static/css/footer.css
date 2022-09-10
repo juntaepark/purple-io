@@ -1,21 +1,4 @@
 .footer {
-  bottom: 0;
-  left: 0;
-  height: 50px;
-  width: 100%;
-  background-color: #eee;
-}
-
-.footer-contents {
-  color: black;
-  width: 96%;
-  height: 100%;
   display: flex;
-  justify-content: left;
-  margin: 0 auto;
-}
-
-.footer-title {
-  font-weight: 400;
-  font-size: 15px;
+  width: 100%;
 }

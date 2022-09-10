@@ -14,7 +14,7 @@ public class Solution {
             score++;
         }
 
-        return score == n.length - 1 ? n.length : score;
+        return score < arr.length ? score : arr.length;
     }
 
     // 아래는 테스트로 출력해 보기 위한 코드입니다.

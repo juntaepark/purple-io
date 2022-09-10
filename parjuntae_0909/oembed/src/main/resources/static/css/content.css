@@ -1,65 +1,18 @@
-.contents-container {
-  width: 80%;
-  height: auto;
-  min-height: 200px;
-  margin-left: 10%;
-  margin-top: 15px;
+.content-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 30px auto;
   border: 1px solid dimgray;
   border-radius: 3px;
   background-color: white;
-  overflow: auto;
 }
 
-.contents {
-  display: flex;
-  flex-direction: column;
+#content-title {
+  font-size: 20px;
+  font-weight: bold;
 }
 
-#titleArea {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 3rem;
-  padding-right: 35.5rem;
-  padding-left: 3rem;
+#content-list {
   font-size: 15px;
-  font-weight: bold;
-}
-
-/* css 구글링 */
-
-#ulArea {
-  width: 100%;
-  margin: 30px auto;
-}
-
-#ulArea li {
-  width: 90%;
-  padding: 10px 0;
-  display: flex;
-  flex-wrap: initial;
-  background-color: white;
-}
-
-#ulArea li:nth-child(2n) {
-  background-color: #eee;
-}
-
-#ulArea li > div:nth-child(1) {
-  flex-basis: 200px;
-  word-break: break-all;
-  white-space: normal;
-  padding-left: 10px;
-}
-
-#ulArea li > div:nth-child(2) {
-  flex-basis: 100%;
-  word-break: break-all;
-  white-space: normal;
-  padding-left: 10px;
-  font-weight: bold;
-}
-
-xmp {
-  width: 100%;
-  white-space: normal;
 }

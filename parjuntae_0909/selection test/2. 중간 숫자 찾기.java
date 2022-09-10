@@ -3,10 +3,9 @@ import java.util.Arrays;
 public class Solution {
     public int solution(int[] n){
 
-        int middle = 2;
         Arrays.sort(n);
 
-        return n[n.length / middle];
+        return n[n.length / 2];
     }
 
     // 아래는 테스트로 출력해 보기 위한 코드입니다.
